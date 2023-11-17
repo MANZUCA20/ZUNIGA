@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="hitler.js"></script>
+    <title>Formulario de Manzuca</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de Manzuca</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="codigoUniversidad">Código de Universidad:</label>
+        <input type="text" id="codigoUniversidad" required>
+
+        <button type="button" onclick="saludar()">Entrar</button>
+    </form>
+</body>
+</html>

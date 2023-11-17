@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="ayia.css"> 
+</head>
+<body>
+    <h2>Bienvenido a la Página de MANZUCA</h2>
+
+    <script>
+        
+        var urlParams = new URLSearchParams(window.location.search);
+
+        
+        var nombre = urlParams.get('nombre');
+        var edad = urlParams.get('edad');
+        var sexo = urlParams.get('sexo');
+        var codigoUniversidad = urlParams.get('codigoUniversidad');
+
+        
+        document.write("<p>Hola, " + nombre + "! Tu código es: " + codigoUniversidad + "</p>");
+
+       
+        document.write("<p>En el curso de Software 2, te sumergirás en el mundo del desarrollo de software avanzado.</p>");
+        document.write("<p>Aprenderás sobre:</p>");
+        document.write("<ul>");
+        document.write("<li>Diseño y desarrollo de arquitecturas de software eficientes.</li>");
+        document.write("<li>Implementación de patrones de diseño para crear soluciones robustas y mantenibles.</li>");
+        document.write("<li>Desarrollo de aplicaciones escalables y eficientes.</li>");
+        document.write("<li>Principios avanzados de programación orientada a objetos.</li>");
+        document.write("<li>Pruebas unitarias y técnicas de aseguramiento de la calidad del software.</li>");
+        document.write("<li>Integración de tecnologías modernas y tendencias en el desarrollo de software.</li>");
+        document.write("</ul>");
+        document.write("<p>¡Prepárate para un viaje lleno de descubrimientos, desafíos emocionantes y la satisfacción de convertirte en un maestro del desarrollo de software!</p>");
+
+        document.write("<p>Tu edad es: " + edad + "! Tu sexo es: " + sexo + "</p>");
+        document.write("<p>Empezemos esta gran aventura ¡VAMOS!</p>");
+    </script>
+</body>
+</html>
